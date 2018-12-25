@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>导航栏 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/adue_theme.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: SideBar Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                
+                <div class="block-spaced header">
+                    <h1>导航栏</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-simple">常规导航栏</a></li>
+                        <li><a href="#grid-responsive">两端对齐导航</a></li>
+                    </ul>
+                </div>
+
+                <!-- Simple :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-simple" class="margin-bottom--lv4">常规导航栏</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv4">
+                                <ul class="nav nav-normal">
+                                    <li>
+                                        <a class="active">首页</a>
+                                    </li>
+                                    <li>
+                                        <a>作品展示</a>
+                                    </li>
+                                    <li>
+                                        <a>关于我们</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<ul class="nav nav-normal">
+    <li>
+        <a class="active">首页</a>
+    </li>
+    <li>
+        <a>作品展示</a>
+    </li>
+    <li>
+        <a>关于我们</a>
+    </li>
+</ul>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>
+                                        常规导航栏，使用 <code>nav</code> 及 <code>nav-normal</code> 标识进行定义。<br>其中 <code>nav</code> 为基础类，<code>nav-normal</code> 为样式类。 
+                                    </p>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- Simple :: End -->
+
+
+                <!-- responsive :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-responsive" class="margin-bottom--lv4">两端对齐导航</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>                        
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv3">
+                                <ul class="nav nav-normal nav-justified">
+                                    <li>
+                                        <a class="active">首页</a>
+                                    </li>
+                                    <li>
+                                        <a>作品展示</a>
+                                    </li>
+                                    <li>
+                                        <a>关于我们</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="block-spaced margin-bottom--lv3">
+                                <div class="box-mobile nav-responsive">
+                                    <ul class="nav nav-normal nav-justified">
+                                        <li>
+                                            <a class="active">首页</a>
+                                        </li>
+                                        <li>
+                                            <a>作品展示</a>
+                                        </li>
+                                        <li>
+                                            <a>关于我们</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<ul class="nav nav-normal nav-justified">
+    <li>
+        <a class="active">首页</a>
+    </li>
+    <li>
+        <a>作品展示</a>
+    </li>
+    <li>
+        <a>关于我们</a>
+    </li>
+</ul>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>两端对齐导航栏，使用 <code>nav-justified</code> 标识实现左右两端对齐的导航栏。<br>另外，还具有响应式变化功能（响应变化的效果如左侧实例），当小于等于 767px 屏幕，导航链接自动变成单列堆叠样式。</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- responsive :: End -->
+                
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 7,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

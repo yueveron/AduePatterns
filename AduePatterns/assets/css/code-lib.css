@@ -1,0 +1,137 @@
+/* Nav :: Start */
+.main-nav{/*position: fixed; top: 0; left: 0; z-index: 9999;*/ width: 100%; height: 60px;  background-color: #f2f2f2;}
+.main-nav .nav{width: 66.66666%;}
+.main-nav .nav li{float: left; line-height: 60px; }
+.main-nav .nav li.logo{ padding: 0 15px;  }
+.main-nav .nav li.logo .box-image{ width: 40px; line-height: 60px;}
+.main-nav .nav li a{ font-size: 13px; display: block; padding: 0 15px; position: relative; }
+.main-nav .nav li a:hover{ background-color: #e5e5e5; }
+.main-nav .nav li a.active{font-weight: bold;}
+.main-nav .nav li a.active::after {position: absolute; content: ""; bottom: 0; right: 12px; left: 12px; border-bottom: 3px solid #d0d0d0; }
+/* Nav :: End */
+
+.wrap{ /*margin-top: 70px;*/ width: 100%;}
+.main-content{position: relative; margin: 0 auto; width: 100%; max-width: 1300px; min-width: 960px; padding: 0 25px;}
+
+/* SideBar :: Start */
+.side-content{ float: left; width: 25%; padding: 36px 0; }
+.side-content ul{padding: 18px;font-size: 14px;line-height:1.619 ;}
+.side-content ul li{line-height: inherit;}
+.side-content ul li a{
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    color: #484848;
+    display: block;
+    line-height: inherit;
+}
+.side-content ul li a:hover{background-color: #f2f2f2; }
+.side-content ul li.active a{background-color: #ccebf3;}
+.side-content.pos-fixed, .side-content.fixed{top: 0; left: auto; max-width: 312px;}
+.side-content a.back-to-top{display: block; padding: 6px 30px; color: #959595; margin-top: 0px; font-size: 12px;}
+.side-content a.back-to-top:hover{color: #237a91;}
+/* SideBar :: End */
+
+
+/* WorkArea :: Start */
+.workarea-content{ float: right; width: 75%; padding: 0 15px; }
+.workarea-content .main{position: relative;}
+.workarea-content .main.container, .workarea-content .container{width: 100%!important;}
+.workarea-content .main .block-spaced{margin: 0 0 25px;}
+.workarea-content .main .header{margin: 48px 0;}
+.workarea-content .main .header h1{padding-top: 10px; font-size: 30px; font-weight: lighter;}
+.workarea-content .main h3{font-size: 20px; font-weight: bold;}
+.workarea-content .main h4{font-size: 17px; font-weight: bold; margin-bottom: 12px;}
+.workarea-content .main p{line-height: 1.8;}
+
+.example {padding: 18px 15px; margin: 25px 0 42px; border-bottom: 1px dashed #b1e0ec; }
+.example h4{ margin-left: -15px; }
+.example h4.note{ margin-left: 0px; }
+.example a{color: #484848!important;}
+.example a:hover{ text-decoration: none!important; }
+.example a.color-fcs0{color: #2c9ab7!important;}
+.example a.color-fcs0:hover{color: #237a91!important; text-decoration: underline;}
+.example .modal {position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: 1; display: block; }
+.example .modal-dialog {left: auto; width: 600px; margin: 30px auto; }
+.example h4.modal-title{margin:0;}
+.example a.xl{font-size: 18px; color: #fff!important;}
+.example .img-circle, .example .img-rounded, .example .img-thumbnail {
+    margin: 5px;
+}
+.workarea-content .main ul.leaders li {
+    line-height: 1.4em;
+    margin-bottom: .6em;
+}
+.workarea-content .main .row{
+    margin-left: -15px!important;
+    margin-right: -15px!important;
+} 
+.workarea-content .main .col.group .col:first-child{padding-left: 15px; padding-right: 0;}
+.workarea-content .main .col.group .col:nth-child(2){padding-left: 0px; padding-right: 15px;}
+
+.workarea-content .main .box-grid-filler{
+    background-color: #b1e0ec; height: 100px; padding: 10px;
+}
+.workarea-content .main .box-grid-filler p{
+    height: 80px; margin-bottom: 0; background: #52bad5; padding-top: 25px; font-weight: bold; color: #fff; text-align: center;
+}
+.workarea-content .main .box-mobile{ width: 414px;  box-shadow: 0.5px 0.5px 0.5px 1px #ccc; padding: 15px; }
+.box-mobile.bgcolor-grey{background-color: #eee;}
+.box-mobile.nav-responsive{}
+.box-mobile.nav-responsive .nav-justified{border-bottom: 0px;}
+.box-mobile.nav-responsive .nav-justified>li {
+        display: block;
+        width: auto;
+    }
+.box-mobile.nav-responsive .nav-justified>li{border-bottom: solid 1px #e0e0e0; margin-top: 5px;}
+
+
+.workarea-content ul.dotted-list{}
+.workarea-content ul.dotted-list>li {
+    line-height: 24px;
+    padding: 12px 0 11px;
+    border-bottom: 1px dotted #e0e0e0;
+}
+.workarea-content .main .nav-normal>li>a{color: #484848;}
+.workarea-content .main .nav-normal>li>a:hover{color: #237a91; }
+.workarea-content .main a{color: #2c9ab7;}
+.workarea-content .main a:hover{color: #237a91; text-decoration: underline;}
+
+.btn-download{background-color: #52bad5; font-size: 18px; color: #fff!important; padding: 12px 30px; border-radius: 8px; }
+.btn-download:hover{background-color: #009cc4!important; }
+.workarea-content.about{ float: none; width: 768px;  margin-left: auto; margin-right: auto; }
+
+code {font-size: 14px; font-weight: lighter; line-height: 18px; font-family: "Source Code Pro",Consolas,"Lucida Console",Courier,monospace; color: #a11; word-spacing: normal; word-wrap: break-word; }
+.bg-b1{background-color: #b1e0ec;}
+.bg-b3{background-color: #52bad5;}
+.bg-g0{background-color: #d4ece6;}
+.bg-k0{background-color: #f2f2f2;}
+.color-white{color: #fff;}
+.color-red{color: #d9534f;}
+.fwb{font-weight: 600;}
+/* WorkArea :: End */
+
+
+/* CodeMirror Start */
+.CodeMirror {border-top: 1px solid #eee; border-bottom: 1px solid #eee; border-right: 1px solid #eee;  line-height: 1.3; height: 100%;   overflow: hidden; } 
+.CodeMirror {position: relative; overflow: hidden;}
+.CodeMirror-scroll {
+    margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; height: 100%; 
+    outline: none; position: relative; -moz-box-sizing: content-box; box-sizing: content-box;
+}
+.CodeMirror-scroll {
+    height: 100%;
+    overflow: visible;
+    overflow-x: hidden;
+    max-height: 540px;
+    min-height: 140px;
+}
+.CodeMirror-linenumbers { padding: 0 4px; }
+.CodeMirror p, .CodeMirror span{
+    font-family: "Source Code Pro", Consolas, "Lucida Console", Courier, monospace; 
+    max-width: none; white-space: pre-wrap; word-break: break-all; font-size: 13px; line-height: 1.4; 
+}
+/* CodeMirror End */
+
+
+

@@ -1,0 +1,969 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>表单元素 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/adue_theme.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: SideBar Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                
+                <div class="block-spaced header">
+                    <h1>表单元素</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-button">按钮</a></li>
+                        <li><a href="#grid-buttonGroup">按钮组</a></li>
+                        <li><a href="#grid-textInput">输入框</a></li>
+                        <li><a href="#grid-textArea">文本域</a></li>
+                        <li><a href="#grid-select">下拉列表</a></li>
+                        <li><a href="#grid-radio">单选与多选框</a></li>
+                    </ul>
+                </div>
+
+                <!-- Button :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-button" class="margin-bottom--lv4">按钮</h3>
+                    </div>
+                    <div class="example">
+                        <h4>纯文字按钮 - 实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv3">
+                                <a class="btn"> 常规按钮 </a>
+                                <a class="btn btn-p0"> 自定义按钮-0 </a>
+                                <a class="btn btn-p1"> 自定义按钮-1 </a>
+                                <a class="btn btn-l0"> 标签按钮 </a>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="box-mobile">
+                                    <div class="block-spaced margin-bottom--lv0">
+                                        <a class="btn btn-block"> 块状按钮 </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+
+    <a class="btn"> 常规按钮 </a>
+    <a class="btn btn-p0"> 自定义按钮-0 </a>
+    <a class="btn btn-p1"> 自定义按钮-1 </a>
+    <a class="btn btn-l0"> 标签按钮 </a>
+    <a class="btn btn-block"> 块状按钮 </a>
+
+
+
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>纯文字按钮，仅有文字的按钮，使用 <code>btn</code> 作为标记。配合以下类标签可更改相应样式:</p>
+                                    <ul class="leaders dots">
+                                        <li><code>btn-p0</code> 自定义背景色及文字</li>
+                                        <li><code>btn-p1</code> 自定义背景色、文字及边框</li>
+                                        <li><code>btn-l0</code> 椭圆边框按钮通常用于标签</li>
+                                        <li><code>btn-block</code> 块状按钮</li>
+                                    </ul> 
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example">
+                        <h4>文字图标组合按钮 - 实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv3">
+                                <a class="btn btn-icon single">
+                                    <span class="icon I-mail"></span>
+                                </a>
+                                <a class="btn btn-icon btn-p1">
+                                    <span class="icon I-mail"></span>
+                                    <span class="text">按钮</span>
+                                </a>    
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="box-mobile">
+                                    <div class="block-spaced margin-bottom--lv2">
+                                        <a class="btn btn-block btn-icon btn-p0">
+                                            <span class="icon I-car"></span>
+                                            <span class="text">查看物流状态</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="block-spaced margin-bottom--lv1">
+                                        <a class="btn btn-block btn-icon btn-p2">
+                                            <span class="icon I-free"></span>
+                                            <span class="text">免费送</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+    <a class="btn btn-icon single">
+        <span class="icon I-mail"></span>
+    </a>
+
+    <a class="btn btn-icon btn-p1">
+        <span class="icon I-mail"></span>
+        <span class="text">按钮</span>
+    </a>    
+    
+    <a class="btn btn-block btn-icon btn-p0">
+        <span class="icon I-car"></span>
+        <span class="text">查看物流状态</span>
+    </a>
+
+    <a class="btn btn-block btn-icon btn-p2">
+        <span class="icon I-free"></span>
+        <span class="text">免费送</span>
+    </a>                                        
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>文字图标组合按钮，由图标及文字组合而成的按钮，使用 <code>btn btn-icon</code> 作为父层标记，<code>icon I-图标</code> 及 <code>text</code> 作为子层标记。配合以下类标签可更改相应样式:</p>
+                                    <ul class="leaders dots">
+                                        <li><code>btn-icon single</code> 纯 icon </li>
+                                        <li><code>btn-icon btn-p1</code> 自定义背景色、文字及边框 </li>
+                                        <li><code>btn-block btn-icon btn-p0</code> 块状及自定义背景色、文字</li>
+                                        <li><code>btn-block btn-icon btn-p2</code> 块状及带下划线</li>
+                                    </ul> 
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example">
+                        <h4>混合型按钮 - 实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced">
+                                <div class="box-mobile">
+                                    <div class="block-spaced margin-bottom--lv1">
+                                        <a class="btn btn-block btn-mixer btn-p2">
+                                            <div class="table-box">                        
+                                                <div class="table-cell small">
+                                                    清闲方式
+                                                </div>
+                                                <div class="table-cell alignl padding-left-right--lv8">
+                                                    免费送
+                                                </div>
+                                                <div class="table-cell small">
+                                                    <span class="icon I-arrowToLeft"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="block-spaced margin-bottom--lv0">
+                                        <a class="btn btn-block btn-mixer btn-p2">
+                                            <div class="table-box">                        
+                                                <div class="table-cell small">
+                                                    <span class="icon I-free"></span>
+                                                </div>
+                                                <div class="table-cell alignl padding-left--lv5">
+                                                    <span>指定赠与</span>
+                                                    <p>在倒计时结束后，物主从想要的人中自行挑选喜欢的新物主。</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+    <a class="btn btn-block btn-mixer btn-p2">
+        <div class="table-box">
+            <div class="table-cell small">
+                清闲方式
+            </div>
+            <div class="table-cell alignl padding-left-right--lv8">
+                免费送
+            </div>
+            <div class="table-cell small">
+                <span class="icon I-arrowToLeft"></span>
+            </div>
+        </div>
+    </a>
+
+    <a class="btn btn-block btn-mixer btn-p2">
+        <div class="table-box">
+            <div class="table-cell small">
+                <span class="icon I-free"></span>
+            </div>
+            <div class="table-cell alignl padding-left--lv5">
+                <span>指定赠与</span>
+                <p>在倒计时结束后，物主从想要的人中自行挑选喜欢的新物主。</p>
+            </div>
+        </div>
+    </a>
+                                </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>混合型按钮，由多个图标及文字组成，且各个图标文字水平居中对齐。使用 <code>btn btn-mixer</code> 作为父层标记，<code>table-box</code> 作为子层标记。配合以下类标签可更改相应样式:</p>
+                                    <ul class="leaders dots">
+                                        <li><code>btn-block btn-mixer btn-p2</code> 块状及带下划线</li>
+                                    </ul> 
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button :: End -->
+
+                <!-- ButtonGroup :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-buttonGroup">按钮组</h3>
+                    </div>
+
+                    <div class="example">
+                        <h4>常规按钮组-实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv0">
+                                <div class="btn-group">
+                                    <a class="btn">L-按钮</a>
+                                    <a class="btn">M-按钮</a>
+                                    <a class="btn">R-按钮</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+    <div class="btn-group">
+        <a class="btn">L-按钮</a>
+        <a class="btn">M-按钮</a>
+        <a class="btn">R-按钮</a>
+    </div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>按钮组，通过按钮组容器把一组按钮放在同一行里。使用 <code>btn-group</code> 作为按钮组容器的标记。</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="example">
+                        <h4>两端对齐排列的按钮组-实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="box-mobile">
+                                <div class="block-spaced margin-bottom--lv2">
+                                    <div class="btn-group btn-group-justified">
+                                        <a class="btn">L-按钮</a>
+                                        <a class="btn">M-按钮</a>
+                                        <a class="btn">R-按钮</a>
+                                    </div>
+                                </div>
+
+                                <div class="block-spaced margin-bottom--lv2">
+                                    <div class="btn-group btn-group-justified space--lv0">
+                                        <a class="btn">L-按钮</a>
+                                        <a class="btn btn-p0">M-按钮</a>
+                                        <a class="btn btn-p1">R-按钮</a>
+                                    </div>
+                                </div>
+
+                                <div class="block-spaced margin-bottom--lv2">
+                                    <div class="btn-group btn-group-justified space--lv0">
+                                        <a class="btn btn-p3 active">step1</a>
+                                        <a class="btn btn-p3">step2</a>
+                                        <a class="btn btn-p3">step3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="btn-group btn-group-justified">
+    <a class="btn">L-按钮</a>
+    <a class="btn">M-按钮</a>
+    <a class="btn">R-按钮</a>
+</div>                            
+
+<div class="btn-group btn-group-justified space--lv0">
+    <a class="btn">L-按钮</a>
+    <a class="btn btn-p0">M-按钮</a>
+    <a class="btn btn-p1">R-按钮</a>
+</div>        
+
+<div class="btn-group btn-group-justified space--lv0">
+    <a class="btn btn-p3 active">step1</a>
+    <a class="btn btn-p3">step2</a>
+    <a class="btn btn-p3">step3</a>
+</div>
+
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>两端对齐排列的按钮组，一组按钮拉长为相同的尺寸，填满父元素的宽度。使用 <code>btn-group btn-group-justified</code> 作为按钮组的标记。</p>
+                                    <ul class="leaders dots">
+                                        <li><code>space--lv0</code> 表示按钮之间无空隙-<code>border-spacing:0px</code></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example">
+                        <h4>固定宽度排列的按钮组-实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="box-mobile">
+                                <div class="block-spaced margin-bottom--lv2">
+                                    <div class="btn-group btn-group-justified space--lv0">
+                                        <div class="btn-table">
+                                            <a class="btn btn-p1">
+                                                <span class="text" style="width: 120px;">回到个人中心</span>
+                                            </a>
+                                            <a class="btn btn-full btn-icon btn-p0">
+                                                <span class="icon I-car" ></span>
+                                                <span class="text">继续发布闲置</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="btn-group btn-group-justified space--lv0">
+    <div class="btn-table">
+        <a class="btn btn-p1">
+            <span class="text" style="width: 120px;">回到个人中心</span>
+        </a>
+        <a class="btn btn-full btn-icon btn-p0">
+            <span class="icon I-car" ></span>
+            <span class="text">继续发布闲置</span>
+        </a>
+    </div>
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>固定宽度排列的按钮组，特殊定义组内某个按钮的宽度。使用 <code>btn-group btn-group-justified</code> 作为按钮组的父层标记，<code>btn-table</code>作为子层标记，在需要指定宽度的按钮内，对元素定义 <code>width</code>。</p>
+                                    <ul class="leaders dots">
+                                        <li>左侧按钮自定义宽度为 120px</li>
+                                        <li>右侧按钮自动填充占满父元素剩余宽度，使用 <code>btn-full</code> 标签。</li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ButtonGroup :: End -->
+
+                <!-- TextInput :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-textInput">输入框</h3>
+                    </div>
+
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced">
+                                <div class="fieldset">
+                                    <label>姓名：</label>
+                                    <input type="text" class="control-text" placeholder="输入框">
+                                </div>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="fieldset-group">
+                                    <input type="text" class="control-text" placeholder="00">
+                                    <span class="fieldset-group-addon">
+                                        天
+                                    </span>
+                                    <input type="text" class="control-text" placeholder="10">
+                                    <span class="fieldset-group-addon">
+                                        时
+                                    </span>
+                                    <input type="text" class="control-text" placeholder="30">
+                                    <span class="fieldset-group-addon">
+                                        分
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="fieldset-group">
+                                    <input type="text" class="control-text" placeholder="">
+                                    <span class="fieldset-group-btn">
+                                        <a class="btn">发送</a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="box-block-fieldset">
+                                    <div class="fieldset-group">
+                                        <span class="fieldset-group-addon">
+                                            <lable class="control-lable">姓名：</lable>
+                                        </span>
+                                        <input type="text" class="control-text" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="box-block-fieldset">
+                                    <div class="fieldset-group">
+                                        <span class="fieldset-group-addon">
+                                            <lable class="control-lable">手机号：</lable>
+                                        </span>
+                                        <input type="text" class="control-text" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="box-block-fieldset">
+                                    <div class="fieldset-group">
+                                        <span class="fieldset-group-addon">
+                                            <lable class="control-lable">验证码：</lable>
+                                        </span>
+                                        <input type="text" class="control-text inline" placeholder="">
+                                        <span class="fieldset-inline">
+                                            <a class="btn">发送验证码</a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col third-2">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="fieldset">
+    <label>姓名：</label>
+    <input type="text" class="control-text" placeholder="输入框">
+</div>
+
+<div class="fieldset-group">
+    <input type="text" class="control-text" placeholder="00">
+    <span class="fieldset-group-addon"> 天 </span>
+    <input type="text" class="control-text" placeholder="10">
+    <span class="fieldset-group-addon"> 时 </span>
+    <input type="text" class="control-text" placeholder="30">
+    <span class="fieldset-group-addon"> 分 </span>
+</div>
+
+<div class="fieldset-group">
+    <input type="text" class="control-text" placeholder="">
+    <span class="fieldset-group-btn">
+        <a class="btn">发送</a>
+    </span>
+</div>
+
+<div class="box-block-fieldset">
+    <div class="fieldset-group">
+        <span class="fieldset-group-addon">
+            <lable class="control-lable">姓名：</lable>
+        </span>
+        <input type="text" class="control-text" placeholder="">
+    </div>
+</div>
+
+<div class="box-block-fieldset">
+    <div class="fieldset-group">
+        <span class="fieldset-group-addon">
+            <lable class="control-lable">手机号：</lable>
+        </span>
+        <input type="text" class="control-text" placeholder="">
+    </div>
+</div>
+
+<div class="box-block-fieldset">
+    <div class="fieldset-group">
+        <span class="fieldset-group-addon">
+            <lable class="control-lable">验证码：</lable>
+        </span>
+        <input type="text" class="control-text inline" placeholder="">
+        <span class="fieldset-inline">
+            <a class="btn">发送验证码</a>
+        </span>
+    </div>
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col third">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>文本输入框内嵌于 <code>fieldset</code> 或 <code>fieldset-group</code> 内。<br> <code>fieldset</code> 父层嵌入的内容为单元素。 <br> <code>fieldset-group</code> 父层嵌入内容为组合元素，组合元素有以下分类：
+                                    </p>
+
+                                    <ul class="leaders dots">
+                                        <li><code>fieldset-group-addon</code> - 文本容器</li>
+                                        <li><code>fieldset-group-btn</code> - 按钮容器</li>
+                                        <li><code>fieldset-inline</code> - 内联容器</li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- TextInput :: End -->
+
+                <!-- TextArea :: Start  -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-textArea">文本域</h3>
+                    </div>
+
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced">
+                                <div class="fieldset">
+                                    <textarea class="control-text" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="fieldset textarea-maxnum">
+                                    <textarea class="control-text" rows="3"></textarea>
+                                    <span class="count">0/200 </span>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="fieldset">
+    &lt;textarea class="control-text" rows="3"></textarea&gt;
+</div>
+
+<div class="fieldset textarea-maxnum">
+    &lt;textarea class="control-text" rows="3"></textarea&gt;
+    <span class="count">0/200 </span>
+</div>  
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>TextArea 文本域，根据需要改变 rows 属性，可设置元素高度。</p>
+                                    <ul class="leaders dots">
+                                        <li><code>fieldset</code> - 常规文本域</li>
+                                        <li><code>fieldset textarea-maxnum</code> - 具有字数限制的文本域，需要配合 js 使用</li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>    
+                <!-- TextArea :: End  -->
+                
+
+                <!-- Select :: Start  -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-select">下拉列表</h3>
+                    </div>
+
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced">
+                                <div class="fieldset">
+                                    <label>省份选择</label>
+                                    <select class="control-select">
+                                        <option value="1" selected="">北京</option>
+                                        <option value="2">广东</option>
+                                        <option value="3">西藏</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="fieldset-group">
+                                    <select class="control-select">
+                                        <option value="1" selected="">00</option>
+                                        <option value="2">01</option>
+                                        <option value="3">02</option>
+                                    </select>
+                                    <span class="fieldset-group-addon">
+                                        天
+                                    </span>
+                                    <select class="control-select">
+                                        <option value="1" selected="">00</option>
+                                        <option value="2">01</option>
+                                        <option value="3">02</option>
+                                    </select>
+                                    <span class="fieldset-group-addon">
+                                        时
+                                    </span>
+                                    <select class="control-select">
+                                        <option value="1" selected="">00</option>
+                                        <option value="2">01</option>
+                                        <option value="3">02</option>
+                                    </select>
+                                    <span class="fieldset-group-addon">
+                                        分
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="fieldset">
+    <label>省份选择</label>
+    <select class="control-select">
+        <option value="1" selected="">北京</option>
+        <option value="2">广东</option>
+        <option value="3">西藏</option>
+    </select>
+</div>
+
+<div class="fieldset-group">
+    <select class="control-select">
+        <option value="1" selected="">00</option>
+        <option value="2">01</option>
+        <option value="3">02</option>
+    </select>
+    <span class="fieldset-group-addon">
+        天
+    </span>
+    <select class="control-select">
+        <option value="1" selected="">00</option>
+        <option value="2">01</option>
+        <option value="3">02</option>
+    </select>
+    <span class="fieldset-group-addon">
+        时
+    </span>
+    <select class="control-select">
+        <option value="1" selected="">00</option>
+        <option value="2">01</option>
+        <option value="3">02</option>
+    </select>
+    <span class="fieldset-group-addon">
+        分
+    </span>
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>下拉列表，内嵌于 <code>fieldset</code> 或 <code>fieldset-group</code>, 具体与文本输入框同理。
+                                    使用 <code>control-select</code> 标记下拉列表样式。
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>    
+                <!-- Select :: End  -->
+
+                <!-- Radio :: Start  -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-radio">单选与多选框</h3>
+                    </div>
+
+                    <div class="example">
+                        <h4>常规单选与多选框 - 实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced">
+                                <div class="fieldset">
+                                    <label>性别</label>
+                                    <div class="radio">
+                                        <input id="male1" type="radio" name="gender" value="male" checked="">
+                                        <label for="male1">男</label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <input id="female1" type="radio" name="gender" value="female1">
+                                        <label for="female1">女</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="fieldset">
+                                    <label>兴趣爱好</label>
+                                    <div class="checkbox">
+                                        <input id="check1" type="checkbox" name="check" value="check-1">
+                                        <label for="check1">文学阅读</label>                                
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <input id="check2" type="checkbox" name="check" value="check-2">
+                                        <label for="check2">体育足球</label>                                
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="fieldset">
+    <label>性别</label>
+    <div class="radio">
+        <input id="male1" type="radio" name="gender" value="male" checked="">
+        <label for="male1">男</label>
+    </div>
+    <div class="radio">
+        <input id="female1" type="radio" name="gender" value="female1">
+        <label for="female1">女</label>
+    </div>
+</div>
+
+<div class="fieldset">
+    <label>兴趣爱好</label>
+    <div class="checkbox">
+        <input id="check1" type="checkbox" name="check" value="check-1">
+        <label for="check1">文学阅读</label>
+    </div>
+    <div class="checkbox">
+        <input id="check2" type="checkbox" name="check" value="check-2">
+        <label for="check2">体育足球</label>
+    </div>
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>常规单选框使用 <code>radio</code> 作为父层标记，内层需注意 <code>input id</code> 与 <code> label for</code> 对应唯一属性名。</p>
+                                    <p>常规复选框使用 <code>checkbox</code> 作为父层标记，内层需注意 <code>input id</code> 与 <code> label for</code> 对应唯一属性名。</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="example">
+                        <h4>IE8专用单选与多选框 - 实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced">
+                                <div class="fieldset">
+                                    <label>性别</label>
+                                    <div class="radio">
+                                        <label class="spec-ie8">
+                                            <input type="radio" name="gender-ie8" checked=""> 男 
+                                        </label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <label class="spec-ie8">
+                                            <input type="radio" name="gender-ie8"> 女 
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-spaced">
+                                <div class="fieldset">
+                                    <label>兴趣爱好</label>
+                                    <div class="checkbox">
+                                        <label class="spec-ie8">
+                                            <input type="checkbox" name="check-ie8" value="check-1"> 文学阅读
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label class="spec-ie8">
+                                            <input type="checkbox" name="check-ie8" value="check-2"> 体育足球
+                                        </label>                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="fieldset">
+    <label>性别</label>
+    <div class="radio">
+        <label class="spec-ie8">
+            <input type="radio" name="gender-ie8" checked=""> 男 
+        </label>
+    </div>
+    <div class="radio">
+        <label class="spec-ie8">
+            <input type="radio" name="gender-ie8"> 女 
+        </label>
+    </div>
+</div>
+
+<div class="fieldset">
+    <label>兴趣爱好</label>
+    <div class="checkbox">
+        <label class="spec-ie8">
+            <input type="checkbox" name="check-ie8" value="check-1"> 文学阅读
+        </label>
+    </div>
+    <div class="checkbox">
+        <label class="spec-ie8">
+            <input type="checkbox" name="check-ie8" value="check-2"> 体育足球
+        </label>                            
+    </div>
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>当需要兼容 IE8 浏览器，必须使用IE8专用单选与多选框。请<span class="color-red">注意</span>父层与内层标记。</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="example">
+                        <h4>按钮模拟单选框 - 实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv0">
+                                <a class="btn btn-checkbox">
+                                    我已阅读
+                                </a>
+                            </div>
+
+                            <div class="block-spaced">
+                                <a class="btn btn-checkbox active">
+                                    我已阅读
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+    <a class="btn btn-checkbox">
+        我已阅读
+    </a>
+    <a class="btn btn-checkbox active">
+        我已阅读
+    </a>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>按钮模拟单选框，使用按钮来模拟单选框功能。<br> 使用 <code>btn btn-checkbox</code> 作为标记，选中状态增加 <code>active</code> 标记。
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>    
+                <!-- Radio :: End  -->
+
+    
+
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 3,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

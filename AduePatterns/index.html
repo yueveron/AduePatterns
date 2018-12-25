@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>页面布局 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: Nav Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                <div class="block-spaced header">
+                    <h1>页面布局</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#basic-html">基础模板</a></li>
+                        <li><a href="#basic-container">布局容器</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <p>本库使用了 <code>border-box</code> 属性，所以 <code>border</code> 以及 <code>padding</code> 会包含在块状元素的 width 内。</p>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="basic-html">基础模板</h3>
+                    </div>
+
+                    <div class="block-spaced">
+                        <textarea class="cmEditor" style="display: none;">
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no">    
+        <title>页面标题</title>        
+        <link rel="stylesheet" href="assets/css/adue_global.css">
+    </head>
+    <body>
+        Hello World!
+    </body>
+    </html>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="basic-container" class="margin-bottom--lv4">布局容器</h3>
+                        <p>本库提供了两个用于包裹页面内容的最外层容器。分别是 <code>.jumbotron</code> 及 <code>.container</code>。以及分隔子容器类 <code>.block-spaced</code></p>
+                    </div>
+
+                    <div class="block-spaced">
+                        <h4>jumbotron</h4>
+                        <p><code>.jumbotron</code> 类用于需要占满全屏的容器使用</p>
+                    </div>
+
+                    <div class="block-spaced">
+                        <h4>container</h4>
+                        <p>
+                            <code>.container</code> 类用于固定宽度并支持响应式布局的容器。<code>.container</code> 响应式断点如下：
+                            <ul class="leaders dots">
+                                <li>屏宽大于等于1200px：<code>width</code> 为 1170px</li>
+                                <li>屏宽在768px与992px之间：<code>width</code> 为 750px</li>
+                                <li>屏宽小于等于767px：<code>width</code> 为 100%</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv1 bg-k0">
+                            <div class="jumbotron">
+                                <div class="container">
+                                    <h1>欢迎使用！</h1>
+                                    <p>这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板。 </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <textarea class="cmEditor" style="display: none;">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>欢迎使用！</h1>
+            <p>这是一个简单的示例模板...</p>
+        </div>
+    </div>
+                            </textarea>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="block-spaced">
+                        <h4>block-spaced</h4>
+                        <p>如需分隔内嵌于 <code>.container</code> 的内容容器，请使用 <code>.block-spaced</code>。<br><code>.block-spaced</code> 具有下外边距，默认属性：<code>margin-bottom:25px;</code></p>
+                    </div>
+
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv1">
+                            <div class="container">
+                                <div class="block-spaced">
+                                    <h2>文章标题</h2>
+                                    <p>这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板。  </p>
+                                </div>
+                                
+                                <div class="block-spaced">
+                                    <h2>文章标题</h2>
+                                    <p>这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板，这是一个简单的示例模板。  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <textarea class="cmEditor" style="display: none;">
+    <div class="container">
+        <div class="block-spaced">
+            <h2>文章标题</h2>
+            <p>这是一个简单的示例模板...</p>
+        </div>
+        
+        <div class="block-spaced">
+            <h2>文章标题</h2>
+            <p>这是一个简单的示例模板...</p>
+        </div>
+    </div>
+                            </textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 0,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

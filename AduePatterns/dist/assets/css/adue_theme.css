@@ -1,0 +1,28 @@
+/* icon */
+.icon.I-mail {
+    width: 22px!important; height: 16px!important;
+    background-size: 22px 16px!important;
+    background-image: url(../images/example/icon_mail.png)!important;
+}
+
+.icon.I-car {
+    background-image: url(../images/example/icon_delivery-white.png)!important;
+    width: 33px!important;
+    height: 32px!important;
+    background-size: 33px 22px!important;
+}
+
+.icon.I-arrowToLeft{
+    background-image: url(../images/example/icon_arrow-toleft.png)!important;
+    width: 6px!important;
+    height: 13px!important;
+    background-size: 6px 13px!important;
+}
+
+.icon.I-free {
+    background-image: url(../images/example/icon_free.png)!important;
+    width: 29px!important;
+    height: 32px!important;
+    background-size: 29px 32px!important;
+}
+

@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>便捷 CSS 类 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: SideBar Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                <div class="block-spaced header">
+                    <h1>便捷 CSS 类</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-spacing">间距</a></li>
+                        <li><a href="#grid-typography">字体</a></li>
+                        <li><a href="#grid-display">显示</a></li>
+                        <li><a href="#grid-responsive">响应式</a></li>
+                        <li><a href="#grid-images">图片形状</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <p>我们定义了以下常用的 CSS 类，使用它们能够快速地对元素进行样式设置，并且避免了创建过多的 CSS 类。</p>
+                </div>
+
+                <!-- Spacing : Start -->
+                <div class="block-spaced margin-bottom--lv2">
+                    <div class="block-spaced">
+                        <h3 id="grid-spacing" class="margin-bottom--lv4">间距</h3>
+                        <p>为了保证间距 CSS 类命名的一致性及层级的递增性, 我们使用 level system 法则对 <code>padding</code> 和 <code>margin</code> 进行定义。 使用 <code>.padding--lv1</code> 到 <code>padding--lv8</code> 来定义 padding ，使用 <code>.margin--lv1</code> 到 <code>margin--lv8</code> 来定义 margin。对于间距为零的 padding 或者 margin，则使用 <code>.padding--lv0</code> 或 <code>.margin--lv0</code> 来定义</p>
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <div class="block-spaced margin-bottom--lv4">
+                        <div class="row">
+                            <div class="col half">
+                                <div class="padding--lv1 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 1: 6px
+                                    </p>
+                                </div>
+
+                                <div class="padding--lv2 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 2: 12px
+                                    </p>
+                                </div>
+
+                                <div class="padding--lv3 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 3: 18px
+                                    </p>
+                                </div>
+
+                                <div class="padding--lv4 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 4:24px
+                                    </p>
+                                </div>
+
+                                <div class="padding--lv5 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 5: 30px
+                                    </p>
+                                </div>
+
+                                <div class="padding--lv6 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 6: 36px
+                                    </p>
+                                </div>
+
+                                <div class="padding--lv7 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 7: 42px
+                                    </p>
+                                </div>
+
+                                <div class="padding--lv8 bg-b1 margin-bottom--lv2">
+                                    <p class="margin--lv0 bg-b3 alignc color-white padding--lv2 fwb">
+                                        Level 8: 48px
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col half">
+                                <h4 class="note">Notes :</h4>
+                                <p>
+                                   单个方位的零间距 padding 或者 margin , 请使用以下 Css Class：
+                                </p>
+                                <ul class="leaders dots margin-bottom--lv6">
+                                    <li>Top 零间距：<code>padding-top--lv0</code> 或 <code>margin-top--lv0</code></li>
+                                    <li>Bottom 零间距：<code>padding-bottom--lv0</code> 或 <code>margin-bottom--lv0</code></li>
+                                    <li>Top-Bottom 零间距：<code>padding-top-bottom--lv0</code> 或 <code>margin-top-bottom--lv0</code></li>
+                                    <li>Left 零间距：<code>padding-left--lv0</code> 或 <code>margin-left--lv0</code></li>
+                                    <li>Right 零间距：<code>padding-right--lv0</code> 或 <code>margin-right--lv0</code></li>
+                                    <li>Left-Right 零间距：<code>padding-left-right--lv0</code> 或 <code>margin-left-right--lv0</code></li>
+                                </ul>
+
+                                <p>
+                                    以下是 margin-bottom 的层级 Css Class：
+                                </p>
+                                <ul class="leaders dots">
+                                    <li><code>margin-bottom--lv1</code> ：margin bottom 6px </li>
+                                    <li><code>margin-bottom--lv2</code> ：margin bottom 12px </li>
+                                    <li><code>margin-bottom--lv3</code> ：margin bottom 18px </li>
+                                    <li><code>margin-bottom--lv4</code> ：margin bottom 24px </li>
+                                    <li><code>margin-bottom--lv5</code> ：margin bottom 30px </li>
+                                    <li><code>margin-bottom--lv6</code> ：margin bottom 36px </li>
+                                    <li><code>margin-bottom--lv7</code> ：margin bottom 42px </li>
+                                    <li><code>margin-bottom--lv8</code> ：margin bottom 48px </li>                                    
+                                </ul>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spacing : End -->
+
+                
+                <!-- Typography : Start -->
+                <div class="block-spaced margin-bottom--lv2">
+                    <div class="block-spaced">
+                        <h3 id="grid-typography" class="margin-bottom--lv4">字体</h3>
+                    </div>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <table class="table table-bordered table1">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                              <th><code>alignl</code></th>
+                              <td><code>text-align: left !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>alignc</code></th>
+                              <td><code>text-align: center !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>alignr</code></th>
+                              <td><code>text-align: right! important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>alignj</code></th>
+                              <td><code>text-align: justify! important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>fsn</code></th>
+                              <td><code>font-style: normal;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>fwb</code></th>
+                              <td><code>font-weight: bold;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>underline</code></th>
+                              <td><code>text-decoration: underline;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>nowrap</code></th>
+                              <td><code>white-space: nowrap;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>indent</code></th>
+                              <td><code>text-indent: 2em;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>xx-small-meta</code></th>
+                              <td><code>font-size: 10px;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>x-small-meta</code></th>
+                              <td><code>font-size: 12px;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>small-meta</code></th>
+                              <td><code>font-size: 13px;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>normal-meta</code></th>
+                              <td><code>font-size: 15px;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>large-meta</code></th>
+                              <td><code>font-size: 16px;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>x-large-meta</code></th>
+                              <td><code>font-size: 18px;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Typography : End -->
+
+                <!-- Display and visibility : Start -->
+                <div class="block-spaced margin-bottom--lv2">
+                    <div class="block-spaced">
+                        <h3 id="grid-display" class="margin-bottom--lv4">显示与浮动及位置</h3>
+                    </div>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <table class="table table-bordered table1">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                              <th><code>invisible</code></th>
+                              <td><code>visibility: hidden !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>visible</code></th>
+                              <td><code>visibility: visible !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>hide</code></th>
+                              <td><code>display: none !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>block</code></th>
+                              <td><code>display: block !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>inline-block</code></th>
+                              <td><code>display: inline-block;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>float-left</code></th>
+                              <td><code>float: left;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>float-right</code></th>
+                              <td><code>float: right;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>nofloat</code></th>
+                              <td><code>float: none !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>centered</code></th>
+                              <td><code>float: none; margin-left: auto; margin-right: auto;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>valign-top</code></th>
+                              <td><code>vertical-align: top !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>valign-middle</code></th>
+                              <td><code>vertical-align: middle !important;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>relative</code></th>
+                              <td><code>position: relative;</code></td>
+                            </tr>
+
+                            <tr>
+                              <th><code>absolute</code></th>
+                              <td><code>position: absolute;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>fixed</code></th>
+                              <td><code>position: fixed;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>pos-l0</code></th>
+                              <td><code>left: 0;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>pos-r0</code></th>
+                              <td><code>right: 0;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>pos-t0</code></th>
+                              <td><code>top: 0;</code></td>
+                            </tr>
+                            <tr>
+                              <th><code>pos-b0</code></th>
+                              <td><code>bottom: 0;</code></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Display and visibility : End -->
+
+                <!-- Responsive : Start -->
+                <div class="block-spaced margin-bottom--lv2">
+                    <div class="block-spaced">
+                        <h3 id="grid-responsive" class="margin-bottom--lv4">响应式</h3>
+                    </div>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv2">
+                    <table class="table table-bordered table1">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Phone</th>
+                                <th>Tablet</th>
+                                <th>Desktop</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                              <th><code>show-phone</code></th>
+                              <td class="bg-g0">显示</td>
+                              <td class="bg-k0"><span class="dim-el4">隐藏</span></td>
+                              <td class="bg-k0"><span class="dim-el4">隐藏</span></td>
+                            </tr>
+                            <tr>
+                              <th><code>show-mobile</code></th>
+                              <td class="bg-g0">显示</td>
+                              <td class="bg-g0">显示</td>
+                              <td class="bg-k0"><span class="dim-el4">隐藏</span></td>
+                            </tr>
+                            <tr>
+                              <th><code>hide-phone</code></th>
+                              <td class="bg-k0"><span class="dim-el4">隐藏</span></td>
+                              <td class="bg-g0">显示</td>
+                              <td class="bg-g0">显示</td>
+                            </tr>
+                            <tr>
+                              <th><code>hide-mobile</code></th>
+                              <td class="bg-k0"><span class="dim-el4">隐藏</span></td>
+                              <td class="bg-k0"><span class="dim-el4">隐藏</span></td>
+                              <td class="bg-g0">显示</td>
+                            </tr>
+                             <tr>
+                              <th><code>hide-desktop</code></th>
+                              <td class="bg-g0">显示</td>
+                              <td class="bg-g0">显示</td>
+                              <td class="bg-k0"><span class="dim-el4">隐藏</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <p class="x-small-meta alignr">注：Phone 的断点为 640px；Tablet 的断点为 1024px</p>
+                </div>
+
+                <!-- Responsive : End -->
+
+                <!-- Images : Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-images" class="margin-bottom--lv4">图片形状</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <img src="assets/images/example/0_100X100.jpg" class="img-rounded" style="width: 120px; height: 120px;">
+                            <img src="assets/images/example/0_100X100.jpg" class="img-circle" style="width: 120px; height: 120px;">
+                            <img src="assets/images/example/0_100X100.jpg" class="img-thumbnail" style="width: 120px; height: 120px;">
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<img src="..." class="img-rounded">
+<img src="..." class="img-circle">
+<img src="..." class="img-thumbnail">
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>
+                                        通过为 <code>&lt;img&gt</code> 元素添加相应的类，可以让图片呈现不同的形状。
+                                    </p>
+                                    <p><span class="color-red">注意：</span> Internet Explorer 8 不支持 CSS3 中的圆角属性。</p>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- Images : End -->
+                
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 9,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>表格 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/adue_theme.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: SideBar Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                
+                <div class="block-spaced header">
+                    <h1>表格</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-simple">常规表格</a></li>
+                        <li><a href="#grid-responsive">响应式表格</a></li>
+                    </ul>
+                </div>
+
+                <!-- Simple :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-simple" class="margin-bottom--lv4">常规表格</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv4">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>完成时间</th>
+                                            <th>获得积分</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                          <th>0~3秒</th>
+                                          <td>30分</td>
+                                        </tr>
+                                        <tr>
+                                          <th>4~12秒</th>
+                                          <td>20分</td>
+                                        </tr>
+                                        <tr>
+                                          <th>13~15秒</th>
+                                          <td>10分</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="block-spaced margin-bottom--lv5">
+                                <table class="table table-bordered table0">
+                                    <thead>
+                                        <tr>
+                                            <th>完成时间</th>
+                                            <th>获得积分</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                          <th>0~3秒</th>
+                                          <td>30分</td>
+                                        </tr>
+                                        <tr>
+                                          <th>4~12秒</th>
+                                          <td>20分</td>
+                                        </tr>
+                                        <tr>
+                                          <th>13~15秒</th>
+                                          <td>10分</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="block-spaced">
+                                <table class="table table-bordered table1">
+                                    <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>参与本次游戏获得的积分</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                          <th>0~3秒</th>
+                                          <td>30分</td>
+                                        </tr>
+                                        <tr>
+                                          <th>4~12秒</th>
+                                          <td>20分</td>
+                                        </tr>
+                                        <tr>
+                                          <th>13~15秒</th>
+                                          <td>10分</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+        <th>完成时间</th>
+        <th>获得积分</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0~3秒</th>
+      <td>30分</td>
+    </tr> ......
+  </tbody>
+</table>
+
+<table class="table table-bordered table0">
+  <thead>
+    <tr>
+        <th>完成时间</th>
+        <th>获得积分</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0~3秒</th>
+      <td>30分</td>
+    </tr> ......
+  </tbody>
+</table>
+
+<table class="table table-bordered table1">
+    <thead>
+        <tr>
+            <th>时间</th>
+            <th>参与本次游戏获得的积分</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th>0~3秒</th>
+          <td>30分</td>
+        </tr> ......
+    </tbody>
+</table>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>
+                                        常规表格，在 <code>&lt;table&gt</code> 内使用 <code>table</code> 及 <code>table-bordered</code> 标识进行定义。 
+                                        <br>
+                                        如需为表格定义样式，可增加 <code>tableX</code> 标识，如实例中在 <code>&lt;table&gt</code> 内使用新增 <code>table0</code> 或 <code>table1</code> 标识。
+                                    </p>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- Simple :: End -->
+
+
+                <!-- responsive :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-responsive" class="margin-bottom--lv4">响应式表格</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>                        
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv3">
+                                <div class="box-mobile bgcolor-grey">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>完成时间完成时间完成时间完成时间</th>
+                                                    <th>获得积分获得积分</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                  <th>0~3秒</th>
+                                                  <td>30分</td>
+                                                </tr>
+                                                <tr>
+                                                  <th>4~12秒</th>
+                                                  <td>20分</td>
+                                                </tr>
+                                                <tr>
+                                                  <th>13~15秒</th>
+                                                  <td>10分</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+          <th>完成时间完成时间完成时间完成时间</th>
+          <th>获得积分获得积分</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0~3秒</th>
+        <td>30分</td>
+      </tr> ......
+    </tbody>
+  </table>
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>将任何 <code>.table</code> 元素内嵌于 <code>.table-responsive</code>元素内，即可创建响应式表格。其会在小于768px出现水平滚动条。当屏幕大于 768px 宽度时，水平滚动条消失。
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- responsive :: End -->
+                
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 6,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>分类系统 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: Nav Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                <div class="block-spaced header">
+                    <h1>分栏系统</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-response">常规分栏</a></li>
+                        <li><a href="#grid-mixer">混合分栏</a></li>
+                        <li><a href="#grid-static">固定分栏</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <p>分栏系统由行（row）与列（column）组合构成。<span class="color-red">注意事项</span>如下：</p>
+                    <ul class="leaders dots">
+                        <li>通过为“列（column）”设置 <code>padding</code> 属性，从而创建列与列之间的间隔（gutter）。通过为 <code>.row</code> 元素设置负值 <code>margin</code> 从而抵消掉为 <code>.container</code> 元素设置的 <code>padding</code>( <code>padding-right: 15px;
+    padding-left: 15px;</code> )，也就间接为“行（row）”所包含的“列（column）”抵消掉了<code>padding</code>。</li>
+                        <li><code>.row</code> 默认属性： <code>margin-left: -15px; margin-right: -15px;</code> </li>
+                        <li><code>.col</code> 默认属性：<code>float: left; padding-right: 15px; padding-left: 15px;</code> </li>
+                    </ul>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-response" class="margin-bottom--lv4">常规分栏</h3>
+                        <p>常规分栏，即响应式分类，当屏幕宽度小于或等于 767px，“列（column）” 的宽度将设置为 100%，自动成为单列。分类如下：</p>
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1 行 2 列</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col half">
+                                <div class="box-grid-filler">
+                                    <p>1 / 2</p> 
+                                </div>
+                            </div>
+                            <div class="col half">
+                                <div class="box-grid-filler">
+                                    <p>1 / 2</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1 行 3 列</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col third">
+                                <div class="box-grid-filler">
+                                    <p>1 / 3</p> 
+                                </div>
+                            </div>
+                            <div class="col third">
+                                <div class="box-grid-filler">
+                                    <p>1 / 3</p> 
+                                </div>
+                            </div>
+                            <div class="col third">
+                                <div class="box-grid-filler">
+                                    <p>1 / 3</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1 行 4 列</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col fourth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 4</p> 
+                                </div>
+                            </div>
+                            <div class="col fourth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 4</p> 
+                                </div>
+                            </div>
+                            <div class="col fourth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 4</p> 
+                                </div>
+                            </div>
+                            <div class="col fourth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 4</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1 行 5 列</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col fifth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 5</p> 
+                                </div>
+                            </div>
+                            <div class="col fifth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 5</p> 
+                                </div>
+                            </div>
+                            <div class="col fifth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 5</p> 
+                                </div>
+                            </div>
+                            <div class="col fifth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 5</p> 
+                                </div>
+                            </div>
+                            <div class="col fifth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 5</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1 行 6 列</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col sixth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 6</p> 
+                                </div>
+                            </div>
+                            <div class="col sixth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 6</p> 
+                                </div>
+                            </div>
+                            <div class="col sixth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 6</p> 
+                                </div>
+                            </div>
+                            <div class="col sixth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 6</p> 
+                                </div>
+                            </div>
+                            <div class="col sixth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 6</p> 
+                                </div>
+                            </div>
+                            <div class="col sixth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 6</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1 行 7 列</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col seventh">
+                                <div class="box-grid-filler">
+                                    <p>1 / 7</p> 
+                                </div>
+                            </div>
+                            <div class="col seventh">
+                                <div class="box-grid-filler">
+                                    <p>1 / 7</p> 
+                                </div>
+                            </div>
+                            <div class="col seventh">
+                                <div class="box-grid-filler">
+                                    <p>1 / 7</p> 
+                                </div>
+                            </div>
+                            <div class="col seventh">
+                                <div class="box-grid-filler">
+                                    <p>1 / 7</p> 
+                                </div>
+                            </div>
+                            <div class="col seventh">
+                                <div class="box-grid-filler">
+                                    <p>1 / 7</p> 
+                                </div>
+                            </div>
+                            <div class="col seventh">
+                                <div class="box-grid-filler">
+                                    <p>1 / 7</p> 
+                                </div>
+                            </div>
+                            <div class="col seventh">
+                                <div class="box-grid-filler">
+                                    <p>1 / 7</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1 行 8 列</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced">
+                        <div class="row">
+                            <div class="col half">
+                                <textarea class="cmEditor" style="display: none;">
+    <div class="row">
+        <div class="col half">
+            <p>1 / 2</p> 
+        </div>
+        <div class="col half">
+            <p>1 / 2</p> 
+        </div>
+        <div class="clearfix"></div>
+    </div> 
+
+
+
+
+                                </textarea>
+                            </div>
+                            <div class="col half">
+                                <h4>Notes :</h4>
+                                <p>左侧例子中，其余列使用的类名如下：</p>
+                                <ul class="leaders dots">
+                                    <li>1 行 2 列 - <code>col half</code></li>
+                                    <li>1 行 3 列 - <code>col third</code></li>
+                                    <li>1 行 4 列 - <code>col fourth</code></li>
+                                    <li>1 行 5 列 - <code>col fifth</code></li>
+                                    <li>1 行 6 列 - <code>col sixth</code></li>
+                                    <li>1 行 7 列 - <code>col seventh</code></li>
+                                    <li>1 行 8 列 - <code>col eighth</code></li>
+                                </ul> 
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-mixer" class="margin-bottom--lv4">混合分栏</h3>
+                        <p>混合分栏，通过混合以及嵌套，从而实现更丰富的分栏布局。分类如下：</p>
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1/8 与 7/8 组合</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col eighth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth-7">
+                                <div class="box-grid-filler">
+                                    <p>7 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>3/8 与 5/8 组合</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col eighth-3">
+                                <div class="box-grid-filler">
+                                    <p>3 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="col eighth-5">
+                                <div class="box-grid-filler">
+                                    <p>5 / 8</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1/4 与 3/4 组合</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col fourth">
+                                <div class="box-grid-filler">
+                                    <p>1 / 4</p> 
+                                </div>
+                            </div>
+                            <div class="col fourth-3">
+                                <div class="box-grid-filler">
+                                    <p>3 / 4</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1/3 与 2/3 组合</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col third">
+                                <div class="box-grid-filler">
+                                    <p>1 / 3</p> 
+                                </div>
+                            </div>
+                            <div class="col third-2">
+                                <div class="box-grid-filler">
+                                    <p>2 / 3</p> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+
+
+                    <div class="block-spaced margin-bottom--lv0">
+                        <h4>1/3 与 2/3 组合 - 1/2 与 1/2 组合嵌套于 2/3 内</h4>
+                    </div>
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="row">
+                            <div class="col third">
+                                <div class="box-grid-filler">
+                                    <p>1 / 3</p> 
+                                </div>
+                            </div>
+                            <div class="col third-2 group">
+                                <div class="col half">
+                                    <div class="box-grid-filler">
+                                        <p>1 / 2</p> 
+                                    </div>
+                                </div>
+                                <div class="col half">
+                                    <div class="box-grid-filler">
+                                        <p>1 / 2</p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+                    
+                    <div class="block-spaced">
+                        <div class="row">
+                            <div class="col half">
+                                <textarea class="cmEditor" style="display: none;">
+    <div class="row">
+        <div class="col third">
+            <p>1 / 3</p>
+        </div>
+        
+        <div class="col third-2 group">
+            <div class="col half">
+                <p>1 / 2</p>
+            </div>
+            <div class="col half">
+                <p>1 / 2</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+                                </textarea>
+                            </div>
+                            <div class="col half">
+                                <h4>Notes :</h4>
+                                <p>左侧例子中，其余列使用的类名如下：</p>
+                                <ul class="leaders dots">
+                                    <li>1/8 与 7/8 组合 - <code>col eight</code> , <code>col eight-7</code></li>
+                                    <li>3/8 与 5/8 组合 - <code>col eight-3</code> , <code>col eight-5</code></li>
+                                    <li>1/4 与 3/4 组合 - <code>col fourth</code> , <code>col fourth-3</code></li>
+                                    <li>1/3 与 2/3 组合 - <code>col third</code> , <code>col third-2</code></li>
+                                </ul> 
+                                <p>使用嵌套时（如左侧例子中），必须使用 <code>group</code> 作为父层类标识。</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-static" class="margin-bottom--lv4">固定分栏</h3>
+                        <p>固定分栏，当屏幕宽度小于或等于 767px，“列（column）” 的宽度保持固定不变，不会自动成为单列。</p>
+                    </div>
+
+                    <div class="block-spaced">
+                        <div class="row">
+                            <div class="col half">
+                                <textarea class="cmEditor" style="display: none;">
+    <div class="row">
+        <div class="col half static">
+            <p>1 / 2</p>
+        </div>
+        
+        <div class="col half static">
+            <p>1 / 2</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+                                </textarea>
+                            </div>
+                            <div class="col half">
+                                <h4>Notes :</h4>
+                                <p>固定分类，只需使用 <code>static</code> 作为 “列（column）” 标记即可。 </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>    
+                    </div>
+                </div>
+
+                </div>    
+
+                    
+
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 1,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

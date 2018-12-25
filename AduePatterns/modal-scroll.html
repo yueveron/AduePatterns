@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>弹层对话框 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="../assets/css/zen_global.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Simple :: Start -->
+    <div class="block-spaced margin-bottom--lv7">
+        <div class="block-spaced">
+            <h3 id="grid-simple" class="margin-bottom--lv4">弹层对话框</h3>
+            <p>弹层对话框主要适用于：表单输入、验证提示等需要以弹层窗体展示的场景。</p>
+        </div>
+        
+
+        <div class="example">
+            <h4>动态实例</h4>
+            <div class="block-spaced margin-bottom--lv5">
+                <div class="block-spaced margin-bottom--lv4">
+                    <a class="btn btn-p0 xl" id="btn-modal-0"> 显示“纯展示类型”弹层对话框</a>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv4">
+                    <a class="btn btn-p0 xl" id="btn-modal-1"> 显示“表单输入类型”弹层对话框</a>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv4">
+                    <a class="btn btn-p0 xl" id="btn-modal-2"> 显示“滚动条类型”弹层对话框</a>
+                </div>
+            </div>
+
+            <div class="block-spaced">
+                <h1>Hello, world!</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+
+                <h1>Hello, world!</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+
+                <h1>Hello, world!</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+
+                <h1>End, world!</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            </div>
+       
+    </div>
+    <!-- Simple :: End -->
+</div>
+
+<!-- Modal 纯展示型 : 弹层对话框 Dom  -->
+<div class="modal" id="myModal-0" data-prop="normal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="btn btn-icon single close">
+                    <span class="icon I-close"></span>
+                </a>
+                <h4 class="modal-title" style="">弹层标题</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+            </div>
+            
+            <div class="modal-footer">
+                <a class="btn cancle">关闭</a>
+            </div>
+        </div>
+    </div>                                    
+</div>
+
+<!-- Modal 表单型 - Extend Class : 弹层对话框 Dom  -->
+<div class="modal" id="myModal-1" data-prop="normal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="btn btn-icon single close">
+                    <span class="icon I-close"></span>
+                </a>
+                <h4 class="modal-title" style="">弹层标题</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="fieldset">
+                    <textarea class="control-text" rows="3"></textarea>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <a class="btn btn-p0 confirm">确认</a>
+                <a class="btn cancle">取消</a>
+            </div>
+        </div>
+    </div>                                    
+</div>
+
+<!-- Modal 滚动条类型 : 弹层对话框 Dom  -->
+<div class="modal" id="myModal-2" data-prop="scroll" data-bodyheight="150">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="btn btn-icon single close">
+                    <span class="icon I-close"></span>
+                </a>
+                <h4 class="modal-title" style="">弹层标题</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+            </div>
+            
+            <div class="modal-footer">
+                <a class="btn cancle">关闭</a>
+            </div>
+        </div>
+    </div>                                    
+</div>
+
+<script src="../assets/js/global/jquery-1.10.2.min.js"></script>
+<script src="assets/js/aduetools.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        init : function(){
+            $('#btn-modal-0').click(function(event) {
+               var modalObj = new Modal('myModal-0'); 
+               modalObj.showModal();
+            });
+
+            $('#btn-modal-1').click(function(event) {
+                var modalObj = new ModalForm('myModal-1', function($inputValue){
+                    //* CallBack Func :: Get TextArea-Value
+                    console.log($inputValue); 
+                }); 
+                modalObj.showModal();
+            });
+
+            $('#btn-modal-2').click(function(event) {
+               var modalObj = new Modal('myModal-2'); 
+               modalObj.showModal();
+            });
+
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

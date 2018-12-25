@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>字体 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: SideBar Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                <div class="block-spaced header">
+                    <h1>字体</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-body">页面主体</a></li>
+                        <li><a href="#grid-Headings">标题</a></li>
+                        <li><a href="#grid-Paragraphs">段落</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-body" class="margin-bottom--lv4">页面主体</h3>
+                        <p>全局 <code>font-size</code> 设置为 15px，<code>line-height</code> 设置为 1.428。这些属性直接赋予 <code>body</code> 元素和所有 <code>p, span, input, textarea</code> 元素。</p>
+                    </div>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-Headings">标题</h3>
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv7">
+                        <ul class="dotted-list">
+                            <li>
+                                <div class="row">
+                                    <div class="col half static">
+                                        <h1>h1. 标题大小</h1>
+                                    </div>
+                                    <div class="col half static">
+                                        <h1 class="dim-el4">36px</h1>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="col half static">
+                                        <h2>h2. 标题大小</h2>
+                                    </div>
+                                    <div class="col half static">
+                                        <h2 class="dim-el4">30px</h2>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="col half static">
+                                        <h3>h3. 标题大小</h3>
+                                    </div>
+                                    <div class="col half static">
+                                        <h3 class="dim-el4">24px</h3>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="col half static">
+                                        <h4 class="margin-bottom--lv0 ">h4. 标题大小</h4>
+                                    </div>
+                                    <div class="col half static">
+                                        <h4 class="margin-bottom--lv0  dim-el4">18px</h4>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="col half static">
+                                        <h5>h5. 标题大小</h5>
+                                    </div>
+                                    <div class="col half static">
+                                        <h5 class="dim-el4">14px</h5>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="block-spaced">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+    <h3 class="margin-bottom--lv0">...
+    </h3>
+
+    <h3 class="margin-bottom--lv1">...
+    </h3>
+
+    <h3 class="margin-bottom--lv2">...
+    </h3>
+
+    ......
+
+    <h3 class="margin-bottom--lv8">...
+    </h3>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4>Notes :</h4>
+                                    <p>使用 <a href="helpers.html#grid-spacing">便捷CSS类</a> 搭配，设置底部外边距（margin-bottom）大小。</p>
+                                    <p>便捷CSS类:</p>
+                                    <ul class="leaders dots">
+                                        <li><code>margin-bottom--lv0</code> for 0px margin-bottom</li>
+                                        <li><code>margin-bottom--lv1</code> for 6px margin-bottom</li>
+                                        <li><code>margin-bottom--lv2</code> for 12px margin-bottom</li>
+                                        <li>......</li>
+                                        <li><code>margin-bottom--lv8</code> for 48px margin-bottom</li>
+                                    </ul> 
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>    
+                        </div>
+
+
+                </div>    
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-Paragraphs" class="margin-bottom--lv4">段落</h3>
+                    </div>
+
+                    <div class="block-spaced margin-bottom--lv7">
+                        <div class="block-spaced">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+    <p>...
+    </p>
+
+    <p class="small-meta">...
+    </p>
+
+    <p class="x-small-meta">...
+    </p>
+
+    <p class="xx-small-meta">...
+    </p>
+    
+    <p class="dim-el">...
+    </p>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4>Notes :</h4>
+                                    <p> <code>&lt;p&gt;</code>（段落）元素被设置了10px的底部外边距（margin）。使用 <a href="helpers.html#grid-typography">便捷CSS类</a> 搭配，设置字体大小。</p>
+                                    <p>便捷 CSS 类:</p>
+                                    <ul class="leaders dots">
+                                        <li><code>small-meta</code> for 13px text</li>
+                                        <li><code>x-small-meta</code> for 12px text</li>
+                                        <li><code>xx-small-meta</code> for 10px text</li>
+                                        <li><code>dim-el for light</code> gray text (80% opacity)</li>
+                                    </ul> 
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>    
+                        </div>
+                    </div>
+
+                </div>        
+                    
+
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 2,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

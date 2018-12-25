@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>弹层对话框 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/adue_theme.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: SideBar Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                
+                <div class="block-spaced header">
+                    <h1>弹层对话框</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-simple">静态 Html 结构</a></li>
+                        <li><a href="#grid-pure">纯展示类型</a></li>
+                        <li><a href="#grid-form">表单类型</a></li>
+                        <li><a href="#grid-scroll">滚动类型</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <p>弹层对话框主要适用于：内容展示、表单输入、验证提示等需要以弹层窗体展示的场景。</p>
+                    <p>弹层对话框使用：必需引入 <code>aduetools.js</code></p>
+                </div>
+
+                <!-- Simple :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-simple" class="margin-bottom--lv4">静态 Html 结构</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv4">
+                                <div class="modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <a class="btn btn-icon single close">
+                                                    <span class="icon I-close"></span>
+                                                </a>
+                                                <h4 class="modal-title" style="">弹层标题</h4>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <p>详情内容......</p>
+                                                <p>详情内容......</p>
+                                            </div>
+                                            
+                                            <div class="modal-footer">
+                                                <!-- Must : confirm -->
+                                                <a class="btn btn-p0 confirm">确认</a>
+                                                <!-- Must : cancle -->
+                                                <a class="btn cancle">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+               <!-- Must : close -->
+               <a class="btn btn-icon single close">
+                  <span class="icon I-close"></span>
+               </a>
+               <h4 class="modal-title" style="">弹层标题</h4>
+            </div>
+            <div class="modal-body">
+               <p>详情内容......</p>
+               <p>详情内容......</p>
+            </div>
+            <div class="modal-footer">
+               <!-- Must : confirm -->
+               <a class="btn btn-p0 confirm">确认</a>
+               <!-- Must : cancle -->
+               <a class="btn cancle">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>
+                                        弹层对话框 Dom 基本结构：
+                                    </p>
+                                    <ul class="leaders dots">
+                                        <li>头 <code>modal-header</code></li>
+                                        <li>体 <code>modal-body</code></li>
+                                        <li>底 <code>modal-footer</code></li>
+                                    </ul>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Simple :: End -->
+
+
+                <!-- Pure :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-pure" class="margin-bottom--lv4">纯展示类型</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv4">
+                                <a class="btn btn-p0 xl" id="btn-modal-0"> 显示 “纯展示类型” 弹层对话框</a>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<!-- Button trigger modal -->
+<div class="block-spaced margin-bottom--lv4">
+    <a class="btn btn-p0 xl" id="btn-modal-0"> 显示“纯展示类型”弹层对话框</a>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="myModal-0" data-prop="normal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="btn btn-icon single close">
+            <span class="icon I-close"></span>
+        </a>
+        <h4 class="modal-title" style="">弹层标题</h4>
+      </div>
+
+      <div class="modal-body">
+        <p>详情内容......</p>
+      </div>
+      
+      <div class="modal-footer">
+        <a class="btn cancle">关闭</a>
+      </div>
+    </div>
+  </div>                                    
+</div>
+
+<!-- Use by jQuery -->
+<script type="text/javascript">
+$('#btn-modal-0').click(function(event) {
+  // @param : id of modal    
+  var modalObj = new Modal('myModal-0');  
+  modalObj.showModal();
+});
+</script>                                        
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>
+                                        “纯展示类型”弹层对话框，用于展示图文内容，高度自动，没有滚动条，所以更适合于内容较短的场景：
+                                    </p>
+                                    <p>使用<span class="color-red">注意：</span></p>
+                                    <ul class="leaders dots">
+                                        <li>必需为<code>.modal</code>设置唯一id <code>myModal-0</code></li>
+                                        <li>必需为<code>.modal</code>设置<code>data-prop="normal"</code>，标记为常规类型弹层对话框</li>
+                                        <li>通过 jQuery 调用 ：必需为 <code>Modal Class</code> 传入元素的 id <code>myModal-0</code> </li>
+                                    </ul>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pure :: End -->
+
+
+                <!-- Form :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-form" class="margin-bottom--lv4">表单类型</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv4">
+                                <a class="btn btn-p0 xl" id="btn-modal-1"> 显示 “表单类型” 弹层对话框</a>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<!-- Button trigger modal -->
+<div class="block-spaced margin-bottom--lv4">
+    <a class="btn btn-p0 xl" id="btn-modal-1"> 显示“表单类型”弹层对话框</a>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="myModal-1" data-prop="normal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="btn btn-icon single close">
+            <span class="icon I-close"></span>
+        </a>
+        <h4 class="modal-title" style="">弹层标题</h4>
+      </div>
+
+      <div class="modal-body">
+        <div class="fieldset">
+           &lt;textarea class="control-text" rows="3"></textarea&gt;
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <a class="btn btn-p0 confirm">确认</a>
+        <a class="btn cancle">取消</a>
+      </div>
+    </div>
+  </div>                                    
+</div>
+
+<!-- Use by jQuery -->
+<script type="text/javascript">
+ $('#btn-modal-1').click(function(event) {
+    // @param : id of modal
+    // @param : CallBack Func :: Get TextArea-Value 
+    var modalObj = new ModalForm('myModal-1', function($inputValue){
+    console.log($inputValue); 
+    }); 
+    modalObj.showModal();
+});
+</script>                                     
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>
+                                        “表单类型”弹层对话框，具有用户输入表单，高度自动，没有滚动条，所以更适合于内容较短的场景：
+                                    </p>
+                                    <p>使用<span class="color-red">注意：</span></p>
+                                    <ul class="leaders dots">
+                                        <li>必需为<code>.modal</code>设置唯一id <code>myModal-1</code></li>
+                                        <li>必需为<code>.modal</code>设置<code>data-prop="normal"</code>，标记为常规类型弹层对话框</li>
+                                        <li>通过 jQuery 调用 ：必需为 <code>ModalForm Class</code> 传入元素的 id <code>myModal-1</code>，及回调函数</li>
+                                    </ul>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form :: End -->
+
+
+                <!-- Scroll :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-scroll" class="margin-bottom--lv4">滚动类型</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv4">
+                                <a class="btn btn-p0 xl" id="btn-modal-2"> 显示 “滚动类型” 弹层对话框</a>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<!-- Button trigger modal -->
+<div class="block-spaced margin-bottom--lv4">
+    <a class="btn btn-p0 xl" id="btn-modal-2"> 显示“滚动类型”弹层对话框</a>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="myModal-2" data-prop="scroll" data-bodyheight="150">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="btn btn-icon single close">
+            <span class="icon I-close"></span>
+        </a>
+        <h4 class="modal-title" style="">弹层标题</h4>
+      </div>
+
+      <div class="modal-body">
+        <p>详情内容......</p>
+      </div>
+      
+      <div class="modal-footer">
+        <a class="btn cancle">关闭</a>
+      </div>
+    </div>
+  </div>                                     
+</div>
+
+<!-- Use by jQuery -->
+<script type="text/javascript">
+$('#btn-modal-2').click(function(event) {
+   var modalObj = new Modal('myModal-2'); 
+   modalObj.showModal();
+});
+</script>                                     
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>
+                                        “滚动类型”弹层对话框，具有滚动条属性，必须设置最大高度 <code>max-height</code>，适合于内容较长的场景：
+                                    </p>
+                                    <p>使用<span class="color-red">注意：</span></p>
+                                    <ul class="leaders dots">
+                                        <li>必需为<code>.modal</code>设置唯一id <code>myModal-1</code></li>
+                                        <li>必需为<code>.modal</code>设置 <code>data-prop="scroll"</code>，标记为滚动类型弹层对话框</li>
+                                        <li>必需为<code>.modal</code>设置 <code>data-probodyheightp="150"</code>，设置滚动容器的高度</li>
+                                        <li>通过 jQuery 调用 ：必需为 <code>Modal Class</code>传入元素的 id <code>myModal-2</code></li>
+                                    </ul>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scroll :: End -->
+                
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- Modal 纯展示型 : 弹层对话框 Dom  -->
+<div class="modal" id="myModal-0" data-prop="normal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="btn btn-icon single close">
+                    <span class="icon I-close"></span>
+                </a>
+                <h4 class="modal-title" style="">弹层标题</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+            </div>
+            
+            <div class="modal-footer">
+                <a class="btn cancle">关闭</a>
+            </div>
+        </div>
+    </div>                                    
+</div>
+
+<!-- Modal 表单型 - Extend Class : 弹层对话框 Dom  -->
+<div class="modal" id="myModal-1" data-prop="normal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="btn btn-icon single close">
+                    <span class="icon I-close"></span>
+                </a>
+                <h4 class="modal-title" style="">弹层标题</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="fieldset">
+                    <textarea class="control-text" rows="3"></textarea>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <a class="btn btn-p0 confirm">确认</a>
+                <a class="btn cancle">取消</a>
+            </div>
+        </div>
+    </div>                                    
+</div>
+
+<!-- Modal 滚动条类型 : 弹层对话框 Dom  -->
+<div class="modal" id="myModal-2" data-prop="scroll" data-bodyheight="150">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="btn btn-icon single close">
+                    <span class="icon I-close"></span>
+                </a>
+                <h4 class="modal-title" style="">弹层标题</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+                <p>详情内容......</p>
+            </div>
+            
+            <div class="modal-footer">
+                <a class="btn cancle">关闭</a>
+            </div>
+        </div>
+    </div>                                    
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<script src="assets/js/aduetools.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 8,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+            //
+            $('#btn-modal-0').click(function(event) {
+               var modalObj = new Modal('myModal-0'); 
+               modalObj.showModal();
+            });
+
+            $('#btn-modal-1').click(function(event) {
+                var modalObj = new ModalForm('myModal-1', function($inputValue){
+                    //* CallBack Func :: Get TextArea-Value
+                    console.log($inputValue); 
+                }); 
+                modalObj.showModal();
+            });
+
+            $('#btn-modal-2').click(function(event) {
+               var modalObj = new Modal('myModal-2'); 
+               modalObj.showModal();
+            });
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>

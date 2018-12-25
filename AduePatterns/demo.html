@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">
+    <title>ADUE-前端组件库-Demo-V1.0</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <!-- <link rel="stylesheet" href="assets/css/zen_global.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/zen_styles.v2.0.css"> -->
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+
+<body>
+
+<div style="float: left; width: 50%;">
+    <textarea class="cmEditor" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+    </div>
+
+    <div class="fieldset">
+        &lt;textarea class="control-text" rows="3"></textarea&gt;
+    </div>
+
+    <div class="fieldset textarea-maxnum">
+        &lt;textarea class="control-text" rows="3"></textarea&gt;
+        <span class="count">0/200 </span>
+    </div>
+    </textarea>
+</div>
+
+<div style="float: right; width: 50%;">
+    <textarea class="cmEditor" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+    </div>
+    </textarea>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        init : function(){
+            page.initCodeMirror();
+        },
+
+        initCodeMirror : function(){
+            var codeInitData = {
+                mode: "text/html",
+                lineNumbers: true,
+                readOnly : true
+            };
+            //
+            $('.cmEditor').each(function(index, el) {
+               var domTextArea = $(el)[0];
+               var CodeMirrorEditor = CodeMirror.fromTextArea(domTextArea, codeInitData);
+            });
+        }
+
+    }
+
+    page.init();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">    
+    <title>缩略图 | ADUE-前端组件库</title>
+    <link rel="stylesheet" href="assets/js/lib/codemirror.css">
+    <link rel="stylesheet" href="assets/css/adue_global.css">
+    <link rel="stylesheet" href="assets/css/adue_theme.css">
+    <link rel="stylesheet" href="assets/css/code-lib.css">
+</head>
+<body>
+
+<div class="main-nav" id="top">
+    <!-- Template :: SideBar Menu -->
+</div>
+
+<div class="wrap">
+    <div class="main-content">
+        <div class="side-content">
+            <!-- Template :: SideBar Menu -->
+        </div>
+        
+        <div class="workarea-content">
+            <div class="main container">
+                
+                <div class="block-spaced header">
+                    <h1>缩略图</h1>
+                </div>
+
+                <div class="block-spaced">
+                    <ul class="nav nav-normal">
+                        <li><a href="#grid-simple">常规缩略图</a></li>
+                        <li><a href="#grid-group">自定义内容缩略图</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-spaced margin-bottom--lv7">
+                    <p>缩略图模块，通过扩展 <a href="gird.html">分栏系统</a> 得以实现。主要应用于以缩略图形式呈现文字、图片等内容形式。</p>
+                </div>
+
+                <!-- Simple :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-simple" class="margin-bottom--lv4">常规缩略图</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv3">
+                                <div class="row clearfix">
+                                    <div class="col fifth static">
+                                        <a class="thumbnail">
+                                            <img src="assets/images/example/0_100X100.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col fifth static">
+                                        <a class="thumbnail">
+                                            <img src="assets/images/example/0_100X100.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col fifth static">
+                                        <a class="thumbnail">
+                                            <img src="assets/images/example/0_100X100.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col fifth static">
+                                        <a class="thumbnail">
+                                            <img src="assets/images/example/0_100X100.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col fifth static">
+                                        <a class="thumbnail">
+                                            <img src="assets/images/example/0_100X100.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col fifth static">
+                                        <a class="thumbnail">
+                                            <img src="assets/images/example/0_100X100.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col fifth static">
+                                        <a class="thumbnail">
+                                            <img src="assets/images/example/0_100X100.jpg">
+                                        </a>
+                                    </div>           
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="row clearfix">
+    <div class="col fifth static">
+        <a class="thumbnail">
+            <img src="assets/images/example/0_100X100.jpg">
+        </a>
+    </div>
+    <div class="col fifth static">
+        <a class="thumbnail">
+            <img src="assets/images/example/0_100X100.jpg">
+        </a>
+    </div> ......
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>常规缩略图，在<code> &lt;a&gt </code> 使用 <code>thumbnail</code> 展示带链接的图片；在<code> &lt;div&gt </code> 使用 <code>thumbnail</code> 展示普通图片；。<br> <span class="color-red">注意：</span>：<code> row </code> 要增加 <code>clearfix</code> 标记确保清除浮动。 </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- Simple :: End -->
+
+
+                <!-- group :: Start -->
+                <div class="block-spaced margin-bottom--lv7">
+                    <div class="block-spaced">
+                        <h3 id="grid-group" class="margin-bottom--lv4">自定义内容缩略图</h3>
+                    </div>
+                    <div class="example">
+                        <h4>实例</h4>                        
+                        <div class="block-spaced margin-bottom--lv5">
+                            <div class="block-spaced margin-bottom--lv3">
+                                <div class="box-mobile bgcolor-grey">
+                                    <div class="row clearfix">
+                                        <div class="col half static">
+                                            <div class="thumbnail card0">
+                                                <div class="box-image">
+                                                    <img src="assets/images/example/0_388X355.jpg">
+                                                </div>
+                                                <div class="box-caption">
+                                                    <h3>00:00:00</h3>
+                                                    <a class="btn btn-block"> 去选新主人 </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col half static">
+                                            <div class="thumbnail card0">
+                                                <div class="box-image">
+                                                    <img src="assets/images/example/0_388X355.jpg">
+                                                </div>
+                                                <div class="box-caption">
+                                                    <h3>00:00:00</h3>
+                                                    <a class="btn btn-block"> 去选新主人 </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col half static">
+                                            <div class="thumbnail card0">
+                                                <div class="box-image">
+                                                    <img src="assets/images/example/0_388X355.jpg">
+                                                </div>
+                                                <div class="box-caption">
+                                                    <h3>00:00:00</h3>
+                                                    <a class="btn btn-block"> 去选新主人 </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="block-spaced margin-bottom--lv4">
+                            <div class="row">
+                                <div class="col half">
+                                    <textarea class="cmEditor" style="display: none;">
+<div class="row clearfix">
+    <div class="col half static">
+        <div class="thumbnail card0">
+            <div class="box-image">
+                <img src="assets/images/example/0_388X355.jpg">
+            </div>
+            <div class="box-caption">
+                <h3>00:00:00</h3>
+                <a class="btn btn-block">去选新主人</a>
+            </div>
+        </div>
+    </div> ......
+</div>
+                                    </textarea>
+                                </div>
+                                <div class="col half">
+                                    <h4 class="note">Notes :</h4>
+                                    <p>自定义内容缩略图，使用 <code>thumbnail card0</code> 展示具有自定义样式与内容的缩略图。
+                                    <br>子层使用 <code>box-image</code> 标记图片元素；使用 <code>box-caption</code> 标记说明元素。
+                                    <br><span class="color-red">注意：</span>：<code> row </code> 要增加 <code>clearfix</code> 标记确保清除浮动。 
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- group :: End -->
+
+                
+
+
+    
+
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script src="assets/js/global/jquery-1.10.2.min.js"></script>
+<!-- CodeMirror -->
+<script src="assets/js/lib/codemirror.js"></script>
+<script src="assets/js/lib/mode/xml.js"></script>
+<script src="assets/js/lib/mode/htmlmixed.js"></script>
+<!-- ArtTemplate -->
+<script src="assets/js/tools/template-native.js"></script>
+<!-- MyProject -->
+<script src="assets/js/pattern.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    console.log('ready');
+    var page={
+        navId : 0,
+        sideBarId : 5,
+        init : function(){
+            pattern.init(page.navId, page.sideBarId);
+        }    
+    }
+    page.init();
+});
+</script>
+
+</body>
+</html>
